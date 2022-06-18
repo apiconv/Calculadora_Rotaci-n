@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Rotación</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <!-- multistep form -->
+  <form id="multistepsform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Ingreso Datos</li>
+      <li>Resultados Rotación</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Ingrese Datos </h2>
+      <h3 class="fs-subtitle"></h3>
+      <input type="number" id="valor1" placeholder="Total Activos" />
+      <input type="number" id="valor2" placeholder="Total Bajas" />
+      <input type="button" class="next action-button" onclick="myFunction()"  value="Calcular" />
+    </fieldset>
+
+    <fieldset>
+      <h2 class="fs-title">Resultados</h2>
+     
+      <p>Rotación Actual: </p>
+      <output id="rotActual" ></output>
+      <br>
+      <p>Bajas Permitidas al 20%: </p>
+      <output id="rotVeiente" ></output> <br>
+      <p>Bajas Permitidas al 30%: </p>
+      <output id="rotTreinta"></output> <br>
+
+      <input type="button" name="previous" class="previous action-button" onclick="limpiar()" value="Regresar" />
+
+
+    </fieldset>
+
+  </form>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
