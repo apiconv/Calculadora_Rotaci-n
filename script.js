@@ -78,9 +78,9 @@ function myFunction() {
   if (isNaN(v1) || isNaN(v2)) {
     alert("Introdusca Numeros Correctos");
   } else {
-    //si no ponemos parseFloat concatenaría x con y
+  
+    
   rotaActual = ((v2 / v1) * 100).toFixed(2);
-
    
 
     perVeinte = Math.trunc(((20/100) * v1) );
