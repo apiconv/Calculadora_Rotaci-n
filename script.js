@@ -84,7 +84,7 @@ function myFunction() {
    
 
     perVeinte = Math.trunc(((20/100) * v1) );
-    perTrein = Math.trunc(((30/100) * v1) );
+    perTrein = Math.trunc(((25/100) * v1) );
   }
   document.getElementById("rotActual").innerHTML = rotaActual + " %";
   document.getElementById("rotVeiente").innerHTML = perVeinte;
